@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#103d2b">
+    <meta name="description" content="Conheça os lugares, as histórias e a cultura de Barra do Corda, Maranhão.">
+    <title>Memória Viva | Barra do Corda</title>
+    <link rel="stylesheet" href="estylo.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <a class="marca" href="#inicio">
+            <span class="marca-icone">✳</span>
+            <span>Memória<span class="marca-destaque">Viva</span>
+                <small>Barra do Corda · MA</small>
+            </span>
+        </a>
+
+        <nav class="navegacao">
+            <a href="#inicio">Início</a>
+            <a href="#destinos">Lugares</a>
+            <a href="#historia">Nossa história</a>
+        </nav>
+
+        <a class="botao botao-topo" href="#destinos">Explorar ↗</a>
+    </header>
+
+    <main>
+        <section class="hero secao" id="inicio">
+            <div class="hero-texto">
+                <span class="etiqueta">NOSSO MARANHÃO, NOSSA HISTÓRIA</span>
+                <h1>Uma cidade cheia de <span>histórias</span> para descobrir.</h1>
+                <p>
+                    Explore as paisagens, a cultura e as memórias de
+                    Barra do Corda. Cada lugar tem algo para contar.
+                </p>
+
+                <div class="hero-botoes">
+                    <a href="#destinos" class="botao botao-principal">
+                        Explorar lugares →
+                    </a>
+                    <a href="#historia" class="botao botao-secundario">
+                        Nossa história
+                    </a>
+                </div>
+
+                <div class="hero-info">
+                    <span>✦ Cultura</span>
+                    <span>✦ Memória</span>
+                    <span>✦ Descobertas</span>
+                </div>
+            </div>
+
+            <div class="hero-imagem">
+                <img
+                    src="bdc/WhatsApp Image 2026-10-17 at 21.34.42.jpeg"
+                    alt="Paisagem de Barra do Corda"
+                    onerror="this.style.display='none'; this.nextElementSibling.hidden=false;"
+                >
+                <div class="hero-placeholder" hidden>
+                    <span>🌿</span>
+                    <strong>Barra do Corda</strong>
+                    <small>Uma cidade de encontros e memórias</small>
+                </div>
+                <div class="imagem-legenda">
+                    <span>📍</span>
+                    <div>
+                        <strong>Barra do Corda</strong>
+                        <small>Maranhão, Brasil</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="destinos secao" id="destinos">
+            <div class="titulo-secao">
+                <div>
+                    <span class="etiqueta">EXPLORE A CIDADE</span>
+                    <h2>Lugares para descobrir</h2>
+                    <p>Conheça os cenários e as memórias da nossa terra.</p>
+                </div>
+                <span class="contador" id="contador">10 lugares</span>
+            </div>
+
+            <div class="barra-busca">
+                <span>⌕</span>
+                <input
+                    type="search"
+                    id="pesquisa"
+                    placeholder="Pesquisar lugares..."
+                    aria-label="Pesquisar lugares"
+                >
+                <button id="limparPesquisa" type="button" aria-label="Limpar pesquisa">×</button>]
+                
+            </div>
+
+            <div class="filtros" aria-label="Filtrar lugares">
+                <button class="filtro ativo" data-filtro="todos">Todos</button>
+                <button class="filtro" data-filtro="natureza">Natureza</button>
+                <button class="filtro" data-filtro="historia">História</button>
+                <button class="filtro" data-filtro="cultura">Cultura</button>
+                <button class="filtro" data-filtro="culinária">Culinária</button>
+                <button class="filtro" data-filtro="favoritos">♡ Favoritos</button>
+            </div>
+
+            <div class="grade-destinos" id="gradeDestinos"></div>
+
+            <div class="sem-resultados" id="semResultados" hidden>
+                <span>🔎</span>
+                <h3>Nenhum lugar encontrado</h3>
+                <p>Tente outra pesquisa ou escolha uma categoria diferente.</p>
+                <button class="botao botao-principal" id="limparFiltros">
+                    Limpar filtros
+                </button>
+            </div>
+        </section>
+
+        <section class="historia secao" id="historia">
+            <div class="historia-simbolo">✳</div>
+            <div>
+                <span class="etiqueta">RAÍZES E IDENTIDADE</span>
+                <h2>Uma cidade, muitas memórias.</h2>
+                <p>
+                  Barra do Corda é uma cidade localizada no centro do Maranhão,
+                  conhecida pelo encontro dos rios Corda e Mearim, por suas belezas naturais,
+                  sua história e sua rica diversidade cultural.A cidade foi fundada em 3 de maio de 1835,
+                  por Manuel Rodrigues de Melo, que se estabeleceu na região e contribuiu para a formação do povoado.
+                  Com o passar do tempo, o lugar cresceu, desenvolveu o comércio e se tornou um importante município maranhense.
+                  A história da região também é marcada pela presença dos povos indígenas, especialmente os povos Guajajara (Tenetehara),
+                 que possuem uma ligação histórica e cultural profunda com esse território.
+                 O encontro dos rios Corda e Mearim tornou-se um dos símbolos da cidade,
+                tanto pela beleza da paisagem quanto pela importância dos rios para a vida da população.Com o passar dos anos, 
+                Barra do Corda cresceu e conquistou maior importância regional. Em 1854, foi elevada à categoria de vila e, em 25 de junho de 1894,
+                passou à categoria de cidade.
+                </p>
+                <a href="#destinos" class="link-texto">Descubra os lugares →</a>
+            </div>
+        </section>
+
+        <section class="convite secao">
+            <span class="etiqueta">A CIDADE TAMBÉM É SUA</span>
+            <h2>Preservar a memória é cuidar do futuro.</h2>
+            <p>Conheça os lugares, valorize a cultura e compartilhe as histórias de Barra do Corda.</p>
+            <a href="#inicio" class="botao botao-principal">Voltar ao início ↑</a>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <a class="marca" href="#inicio">
+            <span class="marca-icone">✳</span>
+            <span>Memória<span class="marca-destaque">Viva</span>
+                <small>Barra do Corda · MA</small>
+            </span>
+        </a>
+        <p>Um projeto de valorização da memória e da cultura local.</p>
+        <span>@ <span id="ano"></span>Di.moises_</span>
+    </footer>
+
+    <div class="modal" id="modal" hidden>
+        <div class="modal-fundo" data-fechar-modal></div>
+        <section class="modal-conteudo"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="modalTitulo">
+            <button class="modal-fechar" id="fecharModal" aria-label="Fechar">×</button>
+            <span class="etiqueta">CONHEÇA MAIS</span>
+            <h2 id="modalTitulo"></h2>
+            <p id="modalTexto"></p>
+            <button class="botao botao-principal" id="confirmarModal">Entendi</button>
+        </section>
+    </div>
+
+    <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+</body>
+</html>
